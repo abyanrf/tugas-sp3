@@ -1,0 +1,36 @@
+class Animal {
+    constructor(name ="",age =0,isMammal = true){
+        this.name = name;
+        this.age = age;
+        this.isMammal =isMammal;
+    }
+
+}
+
+class Rabbit extends Animal{
+    constructor(name,age,isMammal){
+        super(name)
+        this.isMammal= isMammal = true
+        this.age = age
+ 
+     } eat(){
+        console.log(`${this.name} sedang makan! `)
+    }
+ }
+
+ let myrabbit= new Rabbit('labi',2,)
+ myrabbit.eat()
+
+ class Eagle extends Animal{
+    constructor(name,age,isMammal){
+        super(name)
+        this.isMammal= isMammal = false
+        this.age =age
+     } fly(){
+        console.log(`${this.name} sedang terbang!`)
+    }
+ } let myEagle = new Eagle ("elo",4)
+myEagle.fly()
+
+
+
